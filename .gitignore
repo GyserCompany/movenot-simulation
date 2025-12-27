@@ -6,6 +6,7 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 .vscode/
+/.vs/
 
 /[Mm]emoryCaptures/
 !/[Aa]ssets/**/*.meta
