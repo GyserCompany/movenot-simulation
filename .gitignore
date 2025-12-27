@@ -5,7 +5,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
-/.vscode/
+.vscode/
 
 /[Mm]emoryCaptures/
 !/[Aa]ssets/**/*.meta
