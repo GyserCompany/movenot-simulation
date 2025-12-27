@@ -8,6 +8,7 @@ public class PROVERKA : MonoBehaviour
     {
         Console.WriteLine("XYZ");
         Console.WriteLine("PIDOR");
+        //заебал
     }
 
     // Update is called once per frame
