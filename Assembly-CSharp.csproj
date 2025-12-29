@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\SeYoga_Scenes\Testing.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\SeYoga_Scenes\PhysicMovement\Sg_Physic_Move.cs" />
     <Compile Include="Assets\Scripts\Knedme_Scripts\Test.cs" />
   </ItemGroup>
   <ItemGroup>
