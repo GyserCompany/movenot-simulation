@@ -48,9 +48,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\SeYoga_Scenes\Testing.cs" />
-    <Compile Include="Assets\Scripts\Knedme_Scripts\RaycastCube.cs" />
+    <Compile Include="Assets\Scripts\Knedme_Scripts\AdditionalMath.cs" />
+    <Compile Include="Assets\Scripts\Knedme_Scripts\MovingObstacle.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\Knedme_Scripts\TriggerDetector.cs" />
     <Compile Include="Assets\Scripts\SeYoga_Scenes\PhysicMovement\Sg_Physic_Move.cs" />
+    <Compile Include="Assets\Scripts\Knedme_Scripts\UltrasonicSensor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Packages\Meta.Numerics.4.2.0\lib\netstandard2.0\Meta.Numerics.dll" />
+    <None Include="Assets\Packages\Meta.Numerics.4.2.0\lib\netstandard2.0\Meta.Numerics.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -539,6 +546,10 @@
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@031a54704bff\net40\unity-custom\nunit.framework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Meta.Numerics">
+      <HintPath>Assets\Packages\Meta.Numerics.4.2.0\lib\netstandard2.0\Meta.Numerics.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System.IO.Hashing">

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Meta.Numerics</id>
+    <version>4.2.0</version>
+    <title>Meta.Numerics</title>
+    <authors>David Wright</authors>
+    <license type="expression">MS-PL</license>
+    <licenseUrl>https://licenses.nuget.org/MS-PL</licenseUrl>
+    <icon>ComplexDiLogPlot.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>http://www.meta-numerics.net/</projectUrl>
+    <iconUrl>http://www.meta-numerics.net/Images/ComplexPsiPlot.png</iconUrl>
+    <description>A library for advanced numerical computing, with support for data manipulation, statistics, matrix algebra, Fourier transforms, advanced functions, extended precision, and solvers.</description>
+    <copyright>Copyright © David Wright 2008-2025</copyright>
+    <tags>numeric scientific technical math data statistics matrix fft integration optimization solver int128</tags>
+    <repository type="git" url="https://github.com/dcwuser/metanumerics" commit="6d77d64445f7d5d91b12e331399c4362ecb25333" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>
