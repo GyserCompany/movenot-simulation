@@ -101,6 +101,7 @@ public class UltrasonicSensor : MonoBehaviour
         foreach (GameObject obj in sortedObjects)
         {
             // В дальнейшем, тут можно пропустить объект, если у него плохая акустика
+            
 
             // Возвращаем расстояние до ближайшей точки объекта
             Collider col = obj.GetComponent<Collider>();

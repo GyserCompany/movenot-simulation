@@ -51,6 +51,7 @@
     <Compile Include="Assets\Scripts\Knedme_Scripts\AdditionalMath.cs" />
     <Compile Include="Assets\Scripts\Knedme_Scripts\MovingObstacle.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\Knedme_Scripts\ServoController.cs" />
     <Compile Include="Assets\Scripts\Knedme_Scripts\TriggerDetector.cs" />
     <Compile Include="Assets\Scripts\SeYoga_Scenes\PhysicMovement\Sg_Physic_Move.cs" />
     <Compile Include="Assets\Scripts\Knedme_Scripts\UltrasonicSensor.cs" />
