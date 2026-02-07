@@ -10,15 +10,15 @@ public class UltrasonicSensor : MonoBehaviour
     private readonly int   SpeedOfSound   = 343; // м/c
 
     [Header("Параметры датчика")]
-    [Tooltip("Минимальный рабочий диапазон датчика [м]")][Min(0)]
+    [Tooltip("Минимальный рабочий диапазон датчика [м]"), Min(0)]
     public float minRange = 0.02f;
-    [Tooltip("Максимальный рабочий диапазон датчика [м]")][Min(0.01f)]
+    [Tooltip("Максимальный рабочий диапазон датчика [м]"), Min(0.01f)]
     public float maxRange = 4;
     [Tooltip("Эффективный угол датчика (измеряется от центра в градусах)")]
     public float effectiveAngle = 15;
-    [Tooltip("Рабочая частота датчика [Гц]")][Min(1)]
+    [Tooltip("Рабочая частота датчика [Гц]"), Min(1)]
     public int frequency = 40_000;
-    [Tooltip("Диаметр преобразователя датчика [м]")][Min(0.001f)]
+    [Tooltip("Диаметр преобразователя датчика [м]"), Min(0.001f)]
     public float transducerDiameter = 0.008f;
     [Tooltip("Позиция излучателя относительно датчика")]
     public Vector3 transducerPos = new Vector3(0, -0.01273f, 0.01181f);
@@ -98,10 +98,16 @@ public class UltrasonicSensor : MonoBehaviour
             })
             .ToArray();
 
-        foreach (GameObject obj in sortedObjects)
+        foreach (GameObject obj in sortedObjects)    
         {
-            // В дальнейшем, тут можно пропустить объект, если у него плохая акустика
-            
+            // Получаем акустический коэффициент объекта (если не указан, то 0)
+            float acousticCoeff = 0.0f;
+            AcousticObject acoustics = obj.GetComponent<AcousticObject>();
+            if (acoustics != null)
+                acousticCoeff = acoustics.Coefficient;
+            // Если случайное число от 0 до 1 меньше акустического коэффициента, пропускаем объект
+            if (Random.Range(0f, 1f) < acousticCoeff)
+                continue;
 
             // Возвращаем расстояние до ближайшей точки объекта
             Collider col = obj.GetComponent<Collider>();

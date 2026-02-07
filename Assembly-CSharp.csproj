@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\SeYoga_Scenes\Testing.cs" />
+    <Compile Include="Assets\Scripts\Knedme_Scripts\AcousticObject.cs" />
     <Compile Include="Assets\Scripts\Knedme_Scripts\AdditionalMath.cs" />
     <Compile Include="Assets\Scripts\Knedme_Scripts\MovingObstacle.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
